@@ -12,6 +12,7 @@ body {
 input[type="text"] {
     padding: 8px;
     width: 70%;
+    padding-right: 2px;
     margin-right: 5px;
 }
 

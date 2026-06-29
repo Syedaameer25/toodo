@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To Do App</title>
+    <title>To-Do App</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <div class="container">
-        <h1>My Tasks</h1>
+<div class="container">
 
-        <input type="text" id="taskInput" placeholder="Add a task" aria-label="Task input">
-        <button onclick="addTask()">Add</button>
+    <h1>My Tasks</h1>
 
-        <div class="filter">
-            <button onclick="filterTasks('all')">All</button>
-            <button onclick="filterTasks('completed')">Completed</button>
-            <button onclick="filterTasks('pending')">Pending</button>
-        </div>
+    <input
+        type="text"
+        id="taskInput"
+        placeholder="Enter a task"
+    >
 
-        <ul id="taskList"></ul>
+    <button id="addBtn">Add</button>
+
+    <div class="filter">
+        <button id="allBtn">All</button>
+        <button id="completedBtn">Completed</button>
+        <button id="pendingBtn">Pending</button>
     </div>
 
-    <script src="script.js"></script>
+    <ul id="taskList"></ul>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
-
 </html>
